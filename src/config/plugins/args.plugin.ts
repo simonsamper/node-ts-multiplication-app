@@ -49,4 +49,4 @@ export const yarg = yargs( hideBin( process.argv ) )
 
 
     } )
-    .parseSync();
+    .parseSync(); 

@@ -12,7 +12,6 @@ export interface Options {
     fileName?: string;
 }
 
-
 export class SaveFile implements SaveFileUseCase {
     constructor(
         /**
@@ -30,13 +29,11 @@ export class SaveFile implements SaveFileUseCase {
             if ( !fs.existsSync( fileDestination ) ) {
                 fs.mkdirSync( fileDestination, { recursive: true } );
             }
-
             fs.writeFileSync( `${ fileDestination }/${ fileName }.txt`, fileContent );
-
             return true;
 
         } catch ( error ) {
-            console.error( error );
+            // console.error( error );
             return false;
         }
     }

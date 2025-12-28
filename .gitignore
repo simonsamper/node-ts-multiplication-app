@@ -1,6 +1,13 @@
 node_modules/
 dist/   # Carpeta de salida de la compilación   
 outputs/ # Carpeta de salida de los archivos generados
+
+custom-outputs/ # Carpeta de salida de los archivos generados
+coverage/ # Carpeta de cobertura de pruebas
+text-outputs/ # Carpeta de salida de los archivos generados
+text-destination/ # Carpeta de destino de los archivos generados
+
 .env # Archivo de entorno
 .DS_Store # Archivo de sistema
+
 package-lock.json # Archivo de lock de paquetes
